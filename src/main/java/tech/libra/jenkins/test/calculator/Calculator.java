@@ -1,5 +1,10 @@
 package tech.libra.jenkins.test.calculator;
 
+/**
+ * Calculator interface
+ * @author George
+ *
+ */
 public interface Calculator {
 	int add(int first, int second);
 	
