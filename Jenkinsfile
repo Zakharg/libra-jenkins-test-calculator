@@ -24,6 +24,9 @@ pipeline {
                 withMaven(maven : 'Maven 3.5.0') {
                     sh 'mvn deploy'
                 }
+               steps {
+               		echo 'HELLO WORLD'
+               }
             }
         }
     }
