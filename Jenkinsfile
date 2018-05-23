@@ -1,11 +1,10 @@
 pipeline {
     agent any 
-    
-    
+
     stages {
         stage ('Compile stage') {
             steps {
-                withMaver(maven : 'Maven 3.5.0') {
+                withMaven(maven : 'Maven 3.5.0') {
                     sh 'mvn clean compile'
                 }
             }
@@ -27,4 +26,5 @@ pipeline {
             }
         }
     }
+
 }
