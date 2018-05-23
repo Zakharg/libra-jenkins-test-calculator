@@ -1,26 +1,29 @@
 pipeline {
-    agent any
-
+    agent any 
+    
+    
     stages {
-        stage('Build') {
+        stage ('Compile stage') {
             steps {
-				withMaven(maven: 'Maven 3.5.0', globalMavenSettingsConfig: "GlobalMavenSettings.xml.20171122") { 
-				 			if(isUnix()) {
-				 				sh "./mvnw clean install " 
-							} else { 
-				 				bat "mvn clean install " 
-							} 
-				 } 
+                withMaver(maven : 'Maven 3.5.0') {
+                    sh 'mvn clean compile'
+                }
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
+        
+        stage ('Testing Stage') {
+            steps {    
+                withMaven(maven : 'Maven 3.5.0') {
+                    sh 'mvn test'
+                }        
             }
         }
-        stage('Deploy') {
+        
+        stage ('Deployment Stage') {
             steps {
-                echo 'Deploying....'
+                withMaven(maven : 'Maven 3.5.0') {
+                    sh 'mvn deploy'
+                }
             }
         }
     }
