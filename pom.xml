@@ -4,6 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>tech.libra</groupId>
+		<artifactId>libra-jenkins-test-master</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
 	<groupId>tech.libra</groupId>
 	<artifactId>libra-jenkins-test-calculator</artifactId>
 	<version>1.0-SNAPSHOT</version>
@@ -18,19 +24,5 @@
 		</dependency>
 	</dependencies>
 
-
-	<parent>
-		<groupId>tech.libra</groupId>
-		<artifactId>libra-tech-test-master</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</parent>
-
-
-	<distributionManagement>
-		<repository>
-			<id>maven-snapshots</id>
-			<url>http://10.6.33.20:8081/repository/maven-snapshots</url>
-		</repository>
-	</distributionManagement>
 
 </project>
