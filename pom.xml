@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>tech.libra</groupId>
 		<artifactId>libra-jenkins-test-master</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0</version>
 	</parent>
 
 	<groupId>tech.libra</groupId>
