@@ -14,6 +14,18 @@
 	<artifactId>libra-jenkins-test-calculator</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	
+	 <scm>
+        <connection>scm:git:git@github.com:Zakharg/libra-jenkins-test-calculator.git</connection>
+        <url>scm:git:git@github.com:Zakharg/libra-jenkins-test-calculator.git</url>
+        <developerConnection>scm:git:git@github.com:Zakharg/libra-jenkins-test-calculator.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+	<dependencies>
+
+
+	</dependencies>
 
 
 </project>
